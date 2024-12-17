@@ -57,12 +57,14 @@ public class MappingController {
         return "ok";
     }
 
+    // Content-Type
     @GetMapping(value = "/mapping-consume", consumes = "application/json")
     public String mappingConsume() {
         log.info("mappingConsume");
         return "ok";
     }
 
+    // Accept
     @GetMapping(value = "/mapping-produce", produces = "text/html")
     public String mappingProduce() {
         log.info("mappingProduce");
